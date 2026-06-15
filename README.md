@@ -446,3 +446,22 @@ A skill deve atingir os seguintes mínimos em **todos os 3 projetos**:
 - **Projetos diferentes exigem adaptação** — a Fase 3 de um projeto já parcialmente organizado não vai ter as mesmas transformações de um monolito. Sua skill deve se adaptar ao contexto.
 - **Pedir confirmação na Fase 2 é obrigatório** — o humano deve revisar o relatório antes de qualquer modificação.
 - **Consulte as referências do curso** — revise a documentação oficial da ferramenta escolhida e os materiais das aulas para relembrar a estrutura e anatomia de uma skill.
+
+## Análise Manual
+
+- `code-smells-project`
+  - [CRITICAL] `SECRET_KEY` exposta/hardcoded no `app.py`
+  - [CRITICAL] `SECRET_KEY` exposta/hardcoded no `app.py`
+  - [MEDIUM] Email sem nenhuma validação no `controllers.py`
+  - [MEDIUM] Preço Mínimo/Máximo pode não ser um valor numérico na `controllers.py`
+  - [LOW] Magic numbers espalhados no `models.py`
+- `ecommerce-api-legacy`
+  - [CRITICAL] Credenciais hardcoded no `util.js`
+  - [MEDIUM] Variáveis sem significado/semântica no `AppManager.js`
+  - [MEDIUM] Fluxo de matrícula dentro do callback do `api/checkout`
+  - [LOW] `sqlite3.verbose()` no `AppManager.js`
+- `task-manager-api`
+  - [CRITICAL] Credenciais hardcoded no `services/notification_service.py`
+  - [MEDIUM] Lógica de overdue duplicada em vários locais no `routes/task_routes.py`
+  - [MEDIUM] `routes/report_routes.py` pra cada usuário faz uma consulta no "summary report")
+  - [LOW] Logs com `print()` no `app.py` e outros
