@@ -1,7 +1,7 @@
 # Audit Report Template (Phase 2)
 
 Render the Phase-2 audit in **exactly** this structure. Print it to the console **and** save a
-copy to `reports/audit-project-N.md`. Findings must be sorted **CRITICAL → HIGH → MEDIUM → LOW**.
+copy to `reports/audit-project-N.md` (at the project root). Findings must be sorted **CRITICAL → HIGH → MEDIUM → LOW**.
 
 ```
 ================================

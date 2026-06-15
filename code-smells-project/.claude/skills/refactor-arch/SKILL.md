@@ -75,7 +75,7 @@ Goal: produce a structured audit report. Read `references/antipattern-catalog.md
 3. **Sort findings CRITICAL → HIGH → MEDIUM → LOW.**
 4. Always check for **deprecated APIs** (see the catalog's deprecated-API entry) and include them if found.
 5. Render the report using `references/report-template.md`.
-6. **Save the report** to `reports/audit-project-N.md` (create the `reports/` dir if needed; pick the next free N, or ask the user which project number this is).
+6. **Save the report** to `reports/audit-project-N.md` at the **project root** (create the `reports/` dir if needed). Ask the user which project number `N` is if it isn't clear from context; don't guess and risk overwriting an existing report.
 
 Then **STOP**. Print the report, end with:
 
