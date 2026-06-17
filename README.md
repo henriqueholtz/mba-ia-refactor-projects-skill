@@ -452,23 +452,25 @@ A skill deve atingir os seguintes mínimos em **todos os 3 projetos**:
 
 ## Análise Manual
 
-oject`
-
-- [CRITICAL] `SECRET_KEY` exposta/hardcoded no `app.py`
-- [CRITICAL] `SECRET_KEY` exposta/hardcoded no `app.py`
-- [MEDIUM] Email sem nenhuma validação no `controllers.py`
-- [MEDIUM] Preço Mínimo/Máximo pode não ser um valor numérico na `controllers.py`
-- [LOW] Magic numbers espalhados no `models.py`
+- `code-smells-project`
+  - [CRITICAL] `SECRET_KEY` exposta/hardcoded no `app.py`
+  - [CRITICAL] `SECRET_KEY` exposta/hardcoded no `app.py`
+  - [MEDIUM] Email sem nenhuma validação no `controllers.py`
+  - [MEDIUM] Preço Mínimo/Máximo pode não ser um valor numérico na `controllers.py`
+  - [LOW] Magic numbers espalhados no `models.py`
+  - [LOW] Imports sem uso no `models.py` (analisado versão do projeto antes da migração)
 - `ecommerce-api-legacy`
   - [CRITICAL] Credenciais hardcoded no `util.js`
   - [MEDIUM] Variáveis sem significado/semântica no `AppManager.js`
   - [MEDIUM] Fluxo de matrícula dentro do callback do `api/checkout`
   - [LOW] `sqlite3.verbose()` no `AppManager.js`
+  - [LOW] Números mágicos no `AppManager` (analisado versão do projeto antes da migração)
 - `task-manager-api`
   - [CRITICAL] Credenciais hardcoded no `services/notification_service.py`
   - [MEDIUM] Lógica de overdue duplicada em vários locais no `routes/task_routes.py`
-  - [MEDIUM] `routes/report_routes.py` pra cada usuário faz uma consulta no "summary report")
+  - [MEDIUM] `routes/report_routes.py` pra cada usuário faz uma consulta no "summary report"
   - [LOW] Logs com `print()` no `app.py` e outros
+  - [LOW] Números mágicos no `routes/task_routes.py`
 
 ---
 
